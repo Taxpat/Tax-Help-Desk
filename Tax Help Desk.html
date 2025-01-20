@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Assisting Help Desk - Your Tax Filing Partner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #343a40;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            float: left;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #218838;
+            transition: background-color 0.3s ease;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .section li {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .faq li {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq li:hover {
+            background-color: #f1f1f1;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tax Assisting Help Desk: Helping You File Your Taxes on Time</h1>
+    <p>Your trusted partner for tax filing and registration services in Rwanda</p>
+</header>
+
+<nav>
+    <a href="javascript:void(0)" onclick="showTab('home')">Home</a>
+    <a href="javascript:void(0)" onclick="showTab('services')">Our Services</a>
+    <a href="javascript:void(0)" onclick="showTab('faq')">FAQ</a>
+    <a href="javascript:void(0)" onclick="showTab('contact')">Contact</a>
+</nav>
+
+<div class="container">
+    <!-- Home Section -->
+    <div id="home" class="section">
+        <h2>Welcome to Our Tax Filing Help Desk</h2>
+        <p>We specialize in helping individuals and businesses file their taxes accurately and on time. Let us guide you through the entire tax filing process, ensuring you meet all deadlines with ease.</p>
+        <button class="cta-button" onclick="showTab('services')">Get Started</button>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="section">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>Tax Preparation Assistance</strong>: Let us help you with all your tax-related needs, from documents to filing.</li>
+            <li><strong>Filing for Individuals and Businesses</strong>: Ensuring timely and accurate tax filing for both individuals and businesses.</li>
+            <li><strong>Tax Advice and Consultation</strong>: Get professional tax advice to optimize your financial planning and minimize liabilities.</li>
+            <li><strong>Late Filing Support</strong>: Missed your filing deadline? We assist in filing late returns and minimize penalties.</li>
+            <li><strong>Company Registration & Deregistration</strong>: Need help with setting up or closing your business? We assist with RDB registration and deregistration processes.</li>
+        </ul>
+        <h2>Major Taxes We Focus On</h2>
+        <ul>
+            <li><strong>Income Tax</strong>: Assistance with personal and business income tax filing.</li>
+            <li><strong>VAT (Value Added Tax)</strong>: Support for VAT registration, filing, and compliance.</li>
+            <li><strong>PAYE (Pay As You Earn)</strong>: Helping businesses manage and file PAYE taxes.</li>
+            <li><strong>Withholding Tax</strong>: Guidance on proper withholding and remittance processes.</li>
+            <li><strong>Corporate Tax</strong>: Corporate tax filing and advice for businesses.</li>
+        </ul>
+    </div>
+
+    <!-- FAQ Section -->
+    <div id="faq" class="section">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="faq">
+            <li><h3>What documents do I need to file my taxes?</h3><p>You’ll need your income statements (like W-2s or 1099s), deductions, receipts, and any other relevant financial documents.</p></li>
+            <li><h3>Can you help me if I missed the filing deadline?</h3><p>Yes, we offer late filing support. Contact us as soon as possible to get started!</p></li>
+            <li><h3>How much do your services cost?</h3><p>Our fees depend on the complexity of your tax filing. We offer affordable rates tailored to your needs. Get in touch for a free consultation!</p></li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you need assistance or want to request a call, please fill out the form below with your phone number, and we will get back to you as soon as possible!</p>
+        <p><strong>Phone Number:</strong> <a href="tel:+1234567890">0783864203</a></p>
+        <p><strong>Email:</strong> <a href="mailto:rukundoshanan04@gmail.com">rukundoshanan04@gmail.com</a></p>
+
+        <!-- Phone Only Callback Request Form -->
+        <form class="contact-form" action="#" method="post">
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <input type="text" name="preferred_time" placeholder="Preferred Time for Call (e.g., 3 PM)" required>
+            <button type="submit">Request a Callback</button>
+        </form>
+
+        <p>Once submitted, a member of our team will reach out to you at your preferred time.</p>
+
+        <!-- WhatsApp Chat Button -->
+        <a href="https://wa.me/0783864203" class="whatsapp-button" target="_blank">Chat with us</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Tax Assisting Help Desk. All rights reserved. | Helping You File Taxes on Time</p>
+    <p>
+        <a href="https://www.facebook.com/TaxAssistingHelpDesk" target="_blank">Facebook</a>
+        <a href="https://twitter.com/TaxHelpDesk" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/company/tax-help-desk" target="_blank">LinkedIn</a>
+    </p>
+</footer>
+
+<script>
+    function showTab(tabId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => section.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+
+    showTab('home');
+</script>
+
+</body>
+</html>
